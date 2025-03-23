@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- by Kyo from comicfury.com -->
+<svg width="54px" height="50px" version="1.1" viewBox="0 0 149.37 138.31" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-31.15 -79.014)">
+  <path d="m133.22 81.514c-2.6003 0.039-5.0831 1.0892-6.922 2.928l-56.66 56.662c-3.9034 3.9052-3.9034 10.235 0 14.14l56.66 56.662c3.9055 3.9051 10.237 3.9051 14.143 0l1.5875-1.5875c3.9038-3.9053 3.9038-10.236 0-14.141l-48.002-48.002 48.004-48.004c3.9048-3.9055 3.9048-10.237 0-14.142l-1.5875-1.588c-1.9121-1.9109-4.5163-2.9663-7.2192-2.9259z" color="#000000" color-rendering="auto" dominant-baseline="auto" fill="#fff" image-rendering="auto" opacity=".99" shape-rendering="auto" solid-color="#000000" stroke="#00000f" stroke-linejoin="round" stroke-width="5" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;paint-order:markers fill stroke;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+ </g>
+</svg>
