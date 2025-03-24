@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Little Spark - CritterWorld</title>
+      <link rel="icon" type="image/x-icon" href="assets/customer_support.png">
+      <meta property="og:url" content="https://tropicalcritter.neocities.org/">
+      <meta property="og:description" content="Home to TropicalCritter and friends.  Original Comics, Art, Blogs and more!">
+      <meta property="og:image" content="https://tropicalcritter.neocities.org/assets/CritterWorld_logo.png">
+  
+  <link href="http://fonts.cdnfonts.com/css/fortyseven-micro-nbp" rel="stylesheet">
+
+		<style type="text/css">
+			html {
+    margin:0;
+    padding:0;
+    word-wrap:break-word;
+    word-break:break-word;
+
+        background: #000024;
+
+}
+
+a:link {
+    transition:color ease-in 250ms;
+}
+
+h1, h2, h3 {
+    margin:0;
+    padding:0;
+    font-weight:normal;
+}
+
+h2:not(:last-child), h3:not(:last-child) {
+    margin-bottom:10px;
+}
+
+.afterheading {
+    padding-left:8px;
+}
+
+img {
+    border:0;
+}
+
+select {
+    max-width:25vw;
+    max-width:max(25vw, 250px);
+}
+
+
+.comicnav {
+    margin:auto;
+    text-align:center;
+    margin-bottom:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:nowrap;
+}
+
+
+.comicnavlink {
+    display:inline-block;
+    min-width:45px;
+    margin-left:15px;
+    margin-right:15px;
+}
+
+
+.comicnavlink img {
+    max-width:100%;
+    height:auto;
+}
+
+.comicnavlink-grayedout {
+    opacity:0.1;
+    pointer-events: none;
+}
+
+.comic-options {
+    display:flex;
+    align-items:flex-end;
+    justify-content:stretch;
+}
+
+.comic-options div {
+    flex:1 1 auto;
+}
+
+
+#saveplace {
+    min-width:100px;
+    text-align:right;
+}
+#saveplace a {
+    margin-left:15px;
+}
+#saveplace img {
+    max-width:35px;
+    max-height:35px;
+}
+.loadplace-inactive {
+    opacity:0.1;
+}
+.saveplace-saved {
+    filter: drop-shadow(0 3px 0 #00cc11);
+}
+
+#comicrating {
+    text-align:left;
+}
+
+.clear {
+    clear:both;
+}
+
+.comment {
+    padding:10px;
+    padding-bottom:5px;
+    padding-top:5px;
+}
+
+
+.reply-depth1 {
+    margin-left:25px;
+}
+
+.reply-depth2 {
+    margin-left:50px;
+}
+
+.reply-depth3 {
+    margin-left:75px;
+}
+
+.reply-depth4 {
+    margin-left:100px;
+}
+
+.reply-depth5,
+.reply-depth-above5 {
+    margin-left:125px;
+}
+
+
+.avatar {
+    float:left;
+    margin-right:5px;
+    margin-left:5px;
+}
+
+.comment img {
+    height:auto;
+    max-width:100%;
+}
+
+.commentcontent {
+    padding:10px;
+}
+
+.commentdata {
+    padding:10px;
+}
+
+.authordata {
+    margin-right:15px;
+}
+
+.comment-posttime {
+    display:inline-block;
+}
+
+.comment-option-links {
+    display:flex;
+    justify-content:flex-end;
+    padding:10px;
+}
+.comment-option-links a {
+    margin-left:15px;
+}
+
+.site-nav ul li {
+    display:inline-block;
+    list-style:none;
+    margin-left:12px;
+    margin-right:12px;
+}
+.site-nav ul li a {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:24px;
+    padding-top:3px;
+    padding-bottom:3px;
+    word-break:normal;
+}
+
+.site-nav ul {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    padding:0;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin:0;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+#comicdate {
+    font-size:0.9em;
+}
+
+.merged #comicdate {
+    margin-top:-10px;
+}
+
+.comicimagewrap {
+    margin:auto;
+    text-align:center;
+}
+
+
+#slogan {
+    margin-top:12px;
+    padding-left:8px;
+    padding-right:8px;
+}
+
+.box {
+    box-sizing:border-box;
+    max-width:100%;
+}
+
+.merged {
+    margin-top:15px;
+}
+
+.leftal {
+    text-align:left;
+}
+
+.rightal {
+    text-align:right;
+}
+
+.centeral {
+    text-align:center;
+}
+
+h1, #sitetitle a:link {
+    font-size:2rem;
+}
+
+h2 {
+    font-size:1.5em;
+}
+h3 {
+    font-size:1.3em;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer div:not(:last-of-type) {
+    margin-bottom:1px;
+}
+
+
+footer ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+    display:inline-flex;
+    flex-wrap: wrap;
+}
+footer li {
+    list-style:none;
+    margin-left:7px;
+    margin-right:7px;
+}
+
+footer li:first-of-type {
+    margin-left:0;
+}
+
+footer li:last-of-type {
+    margin-right:0;
+}
+
+
+.hostedby {
+    display:inline-flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content: center;
+}
+
+.hostedby a {
+    display:inline-flex;
+    align-items:center;
+    word-wrap:normal;
+    word-break:keep-all;
+}
+
+.hostedby a img {
+    width:auto;
+    margin-left:0.5em;
+    margin-right:5px;
+}
+
+.authordata {
+    font-weight:bold;
+}
+
+.permalinkcode {
+    padding:5px;
+    margin-right:8px;
+}
+
+.postcomment {
+    margin:3px;
+    margin-top:6px;
+    margin-bottom:6px;
+}
+
+#archive {
+    width:100%;
+    margin-bottom:10px;
+    box-sizing:border-box;
+}
+
+#archive h3 {
+    margin-bottom:0;
+}
+
+
+#archive .chaptertitle:not(:first-child) {
+    padding-top:25px;
+}
+
+#archive .chaptertitleinner {
+    padding:10px;
+    margin-bottom:10px;
+}
+
+
+#archive .archivechapter {
+    margin:0;
+    padding:3px;
+    font-size:1.1em;
+}
+
+#archive .chapterdescription {
+    padding:4px;
+    padding-left:9px;
+    padding-top:8px;
+    font-size:0.85em;
+}
+
+#archive .archivecomic {
+    display:flex;
+    align-items:center;
+    flex-wrap:nowrap;
+    text-align:left;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+#archive .comicnumber,
+#archive .comicposttime,
+#archive .archivecomictitle {
+    box-sizing:border-box;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+
+#archive .comicnumber {
+    padding-right:5px;
+    min-width:40px;
+    word-wrap:normal;
+    word-break:keep-all;
+}
+
+#archive .comicposttime {
+    margin-top:4px;
+    font-size:0.8em;
+    text-align:right;
+    width:calc(30% - 40px);
+}
+
+#archive .archivecomictitle {
+    flex:1 1 70%;
+}
+
+#archive-chapters {
+    text-align:left;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+#archive-chapters .chapter {
+    display:flex;
+    margin-bottom:35px;
+}
+
+#archive-chapters .chapter-cover {
+    margin-right:15px;
+}
+
+.chapter-cover img {
+    max-width:100%;
+    height:auto;
+}
+
+#archive-chapters .chapter-data {
+    flex:1 1 0%;
+}
+
+#archive-chapters h3 {
+    margin:0;
+    margin-bottom:6px;
+}
+
+#archive-chapters .chapter-title a:link,
+#archive-chapters .chapter-title a:visited {
+    font-size:120%;
+}
+
+#archive-chapters .chapterdescription {
+    font-size:14px;
+    margin-bottom:8px;
+}
+
+#archive-chapters .chapter-more {
+    font-size:14px;
+}
+
+
+.archive-back-link {
+    margin-bottom:15px;
+    margin-top:15px;
+}
+
+
+#thumbnail-preview-box,
+.chapter-cover a {
+    background-color:#ffffff;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.15);
+    transition:opacity 200ms linear;
+    display:block;
+}
+
+#thumbnail-preview-box img,
+.chapter-cover a img {
+    display:block;
+}
+
+#errormessage {
+    margin:10px;
+}
+
+#blogs {
+    margin:10px;
+}
+
+.blogauthor {
+    margin-bottom:10px;
+    font-size:0.9em;
+}
+
+.blogcontent {
+    margin:20px;
+    margin-top:5px;
+}
+
+.blogcontent img,
+#extrapage img {
+    max-width:100%;
+    /*using !important because the WYSIWYG-editor sometimes applies widths and heights as an inline style, which could cause squishy images otherwise*/
+    height:auto !important;
+}
+
+.blogcontent table,
+#extrapage table {
+    max-width:100%;
+}
+
+.blogcontent table img,
+#extrapage table img {
+    /* we cannot use the 100% rule in tables, since it causes columns with text to take up all the space and make images tiny.
+       this rule will only work with tables that have up to 3 image columns next to one another (or two images and text),
+       wider tables will end up stretching the page*/
+    max-width:27vw;
+}
+
+.blognav {
+    margin-bottom:5px;
+    display:table;
+    width:100%;
+}
+
+.prevblog, .nextblog {
+    display:table-cell;
+    width:50%;
+}
+
+.prevblog {
+    text-align:left;
+}
+
+.nextblog {
+    text-align:right;
+}
+
+.blogarchivelink {
+    margin-top:5px;
+    margin-bottom:15px;
+}
+
+#blogarchive {
+    padding:0;
+    margin:10px;
+}
+
+#blogarchive li {
+    margin-left:20px;
+}
+
+#blogarchive .bahead {
+    list-style:none;
+    font-size:1.2em;
+    font-weight:bold;
+    margin:0;
+}
+
+.blogmeta {
+    margin-top:5px;
+    text-align:right;
+}
+
+.blogarchivelink {
+    text-align:right;
+}
+
+#searchbox {
+    margin:10px;
+}
+
+.searchbar {
+    display:flex;
+    max-width:100%;
+    box-sizing:border-box;
+}
+#searchbox input[type="text"] {
+    box-sizing:border-box;
+    flex:1 1 auto;
+    border:0;
+    padding:10px 20px;
+    background-color:rgba(255,255,255, 0.5);
+    border:1px solid rgba(0, 0, 0, 0.3);
+    border-right:0;
+    border-top-left-radius:6px;
+    border-bottom-left-radius:6px;
+    min-width:30px;
+    width:70%;
+}
+
+#searchbox input[type="submit"] {
+    box-sizing:border-box;
+    flex:0 0 auto;
+    border:1px solid rgba(0, 0, 0, 0.3);
+    border-left:0;
+    padding:10px 20px;
+    background-color:rgba(255, 255, 255, 0.7);
+    border-top-right-radius:6px;
+    border-bottom-right-radius:6px;
+}
+
+.browse-tagged {
+    margin-bottom:10px;
+}
+
+#comicimage, #latestcomicimage, #main_banner, .postcomment img {
+    height:auto;
+    width:auto;
+    max-width:100%;
+}
+
+#main_banner {
+    display:block;
+}
+
+.centeral #main_banner {
+    margin:auto;
+}
+
+.rightal #main_banner {
+    margin-left:auto;
+}
+
+.cfbanner {
+    margin:auto;
+    text-align:center;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+.cfbanner img {
+    max-width:100%;
+    height:auto;
+}
+
+.cflink {
+    margin:auto;
+    text-align:center;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.cflink img {
+    max-width:min(100%, 225px);
+    height:auto;
+}
+
+.comicsegments {
+    line-height:0; /*this is to prevent there from being space between the images on multi-image pages*/
+}
+.comicsegments .textcontent {
+    line-height:normal;
+}
+.comicsegmentimage {
+    height:auto;
+    max-width:100%;
+}
+.segmentcontainer {
+    text-align:center;
+}
+
+.browsing-tags-note {
+    text-align: center;
+    margin-top:5px;
+}
+
+.browse-all-link {
+    margin-top:5px;
+}
+
+#tags {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.box {
+    border: 2px solid #ECD200;
+    border-radius: 15px;
+    color:#ECD200;
+    font-size:14px;
+    font-family:"Gill Sans","Gill Sans MT", sans-serif;
+    background: #000016;
+    width: 1150px;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+.box a:link, .box a:visited {
+    color:#5E540D;
+    font-size:14px;
+    text-decoration: none;
+}
+
+.box a:hover {
+    color:#ECD200;
+    text-decoration: none;
+}
+
+.box .sub-element-head {
+    background-color:rgba(0, 0, 35, 1);
+}
+
+.box .sub-element-body {
+    background-color:rgba(0, 0, 41, 1);
+}
+
+.box .secondary-info-text,
+.box a:link.secondary-info-text,
+.box a:visited.secondary-info-text,
+.box a:hover.secondary-info-text {
+    color:#92851e;
+}
+
+.box .secondary-info-text a:link,
+.box .secondary-info-text a:visited {
+    color:#47400f;
+}
+
+.box .secondary-info-text a:hover {
+    color:#92851e;
+}
+
+
+
+.postcomment a:link, .box a:visited {
+    font-size:1.4em;
+}
+
+.box .pagelabel {
+    font-size:16px;
+}
+
+.box .pagelink, .box .pagelink:visited, .box .pagelink:link, .box .pageskip {
+    display:inline-block;
+    font-size:24px;
+    margin-left:20px;
+    margin-top:4px;
+    margin-bottom:4px;
+    padding:8px 16px;
+    opacity:0.7;
+}
+.box .pagelink:hover {
+    opacity:0.85;
+}
+
+.box .currentpage {
+    opacity:1;
+}
+
+.site-nav ul {
+    justify-content:center;
+}
+
+
+
+
+/*rules for smaller screens*/
+
+@media (max-width:1000px) {
+    .comicnav {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+    .comicnav .quicknav {
+        width:100%;
+        order:10; /*the default order is 0, so this will make it the last (for small screens)*/
+        margin-top:15px;
+    }
+    .comicnavlink img {
+        max-width:110px;
+    }
+
+}
+@media (max-width:800px) {
+    .box {
+        min-width:90%;
+    }
+    h1, #sitetitle a:link {
+        font-size:1.8rem;
+    }
+
+    h2 {
+        font-size:1.4em;
+    }
+    h3 {
+        font-size:1.2em;
+    }
+
+    .comicnavlink img {
+        max-width:95px;
+    }
+
+    .chapter-cover img {
+        max-width:160px;
+        height:auto;
+    }
+
+
+
+}
+
+@media (max-width:630px) {
+    .box {
+        min-width:95%;
+    }
+
+    h1, #sitetitle a:link {
+        font-size:1.5rem;
+    }
+
+    h2 {
+        font-size:1.3em;
+    }
+    .blogcontent {
+        margin:15px;
+        margin-top:5px;
+    }
+
+    .avatar img {
+        max-width:100px;
+        max-height:100px;
+        width:auto;
+        height:auto;
+    }
+
+    #archive {
+        padding-left:0;
+    }
+
+    #archive .archivecomic {
+        flex-wrap:wrap;
+        align-items:flex-start;
+    }
+
+    #archive .comicnumber {
+        min-width:auto;
+        word-wrap:break-word;
+        word-break:break-word;
+    }
+
+    #archive .comicposttime {
+        text-align:left;
+        width:100%;
+        padding-top:0;
+        padding-bottom:0;
+    }
+
+    #archive .archivecomictitle {
+        width:auto;
+        flex-basis:90%;
+    }
+
+    #archive .comicnumber,
+    #archive .archivecomictitle {
+        padding-top:10px;
+        padding-bottom:0;
+    }
+
+    #archive .archivecomic:first-of-type .comicnumber,
+    #archive .archivecomic:first-of-type .archivecomictitle {
+        padding-top:0;
+    }
+
+    .reply-depth1 {
+        margin-left:20px;
+    }
+
+    .reply-depth2 {
+        margin-left:40px;
+    }
+
+    .reply-depth3 {
+        margin-left:60px;
+    }
+
+    .reply-depth4 {
+        margin-left:80px;
+    }
+
+    .reply-depth5,
+    .reply-depth-above5 {
+        margin-left:100px;
+    }
+
+    .commentcontent {
+        padding-left:4px;
+        padding-right:4px;
+    }
+
+    .comicnavlink img {
+        max-width:75px;
+    }
+
+    .chapter-cover img {
+        max-width:110px;
+    }
+}
+
+@media (max-width:500px) {
+
+    .comicnavlink img {
+        max-width:65px;
+    }
+    .comicnavlink {
+        margin-left:9px;
+        margin-right:9px;
+    }
+
+    .reply-depth3,
+    .reply-depth4,
+    .reply-depth5,
+    .reply-depth-above5 {
+        margin-left:60px;
+    }
+}
+
+@media (max-width:400px) {
+    .comicnavlink img {
+        max-width:58px;
+    }
+    .box {
+        min-width:100%;
+    }
+
+    h1, #sitetitle a:link {
+        font-size:1.3rem;
+    }
+
+    h2 {
+        font-size:1.2em;
+    }
+    h3 {
+        font-size:1.1em;
+    }
+
+    .blogcontent {
+        margin:10px;
+        margin-top:5px;
+    }
+
+    .avatar img {
+        max-width:75px;
+        max-height:75px;
+    }
+
+    .comment {
+        padding-left:0;
+        padding-right:0;
+    }
+
+    .box .pagelink, .box .pagelink:visited, .box .pagelink:link, .box .pageskip {
+        margin-left:12px;
+        margin-top:6px;
+        margin-bottom:6px;
+    }
+
+    .chapter-cover img {
+        max-width:80px;
+    }
+
+    .reply-depth1 {
+        margin-left:15px;
+    }
+
+    .reply-depth2 {
+        margin-left:30px;
+    }
+
+    .reply-depth3,
+    .reply-depth4,
+    .reply-depth5,
+    .reply-depth-above5 {
+        margin-left:45px;
+    }
+
+    .box {
+        padding: 15px 10px;
+    }
+
+
+}
+
+@media (max-width:340px) {
+
+    .comicnavlink img {
+        max-width:50px;
+    }
+}
+
+
+
+		</style>
+
+		<script type="text/javascript" src="https://thecomicseries.com/cflayoutjs.js.php?cc=inline&amp;wcid=67270&amp;from=https%3A%2F%2Fkikiandchibi.thecomicseries.com%2F"></script>
+
+        
+            <script type="text/javascript">
+                activateKeyboardNavigation("#content-start", "#content-start", "ArrowLeft", "ArrowRight");
+            </script>
+        
+
+
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function(e) {
+                //this checks if the current visitor has a place saved already, and if not, adds the "loadplace-inactive" class
+                //to the "load my place" link, to gray it out
+                var loadPlaceLink = document.getElementById('loadplace-link');
+                if(loadPlaceLink !== null && !comicfury.bookmark)
+                {
+                    loadPlaceLink.classList.add('loadplace-inactive');
+                }
+            });
+
+            var customOnSave = function(saveLink) {
+                //this adds the class "saveplace-saved" class to the "save my place" link, when the bookmark has been saved.
+                //you can also overwrite saveLink.innerHTML instead with new HTML code to e.g. change the image
+                saveLink.classList.add('saveplace-saved');
+            };
+        </script>
+	</head>
+	<body>
+        <div id="header-box" class="box">
+            <header class="centeral">
+                
+                    <a href="/"><img src="https://WaffleCritter.github.io/assets/littlespark/Website banner.png" title="Little Spark - A Short Pokemon Story" id="main_banner" /></a>
+                
+                
+            </header>
+        </div>
+
+        
+        <div id="content-start"></div>
+                <div id="comic-title-box" class="box">
+            <div class="leftal">
+                <h2 class="comictitle">Cover</h2>
+            </div>
+
+
+            <div class="merged">
+                <div id="comicdate" class="secondary-info-text">
+                    21st Sep 2024, 6:40 PM
+                    
+                        
+                    
+                </div>
+            </div>
+
+            <div class="merged">
+                <div class="comicimagewrap"><img src="https://WaffleCritter.github.io/webcomics/Book1_LittleSpark/CHAPTER 1_Discovery/littlespark_page2.png" alt="WORK IN PROGRESS" title="" width="982" height="1373" id="comicimage" /></div>
+
+                
+            </div>
+
+            <div class="merged">
+                
+
+                <div class="comicnav" id="comicnav">
+                    <a href="/comics/1/#content-start" rel="start" class="comicnavlink comicnavlink-grayedout">
+                        <img src="https://WaffleCritter.github.io/assets/misc/sle_first.svg" alt="&lt;&lt;First" />
+                    </a>
+
+                    <a href="/comics/1/#content-start" rel="prev" class="comicnavlink comicnavlink-grayedout">
+                        <img src="https://WaffleCritter.github.io/assets/misc/sle_prev.svg" alt="&lt;Previous" />
+                    </a>
+
+                    <a href="/comics/1/#content-start" rel="next" class="comicnavlink comicnavlink-grayedout">
+                        <img src="https://WaffleCritter.github.io/assets/misc/sle_next.svg" alt="Next&gt;" />
+                    </a>
+
+                    <a href="/comics/#content-start" rel="index" class="comicnavlink comicnavlink-grayedout">
+                        <img src="https://WaffleCritter.github.io/assets/misc/sle_last.svg" alt="Latest&gt;&gt;" />
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div id="comic-authornotes-box" class="box">
+
+            
+                <h2 class="heading">Author Notes:</h2>
+
+                <div id="authornotes">
+                    
+                        <div class="comment" id="comment-3780363">
+                            <div class="commentdata sub-element-head">
+                                <span class="authordata">
+                                    <a href="https://tropicalcritter.neocities.org/about" class="author">TropicalCritter</a>
+                                </span>
+                                7th Sep 2024, 3:43 PM</a>
+                                <div class="clear"></div>
+                            </div>
+
+                            <div class="commentcontent sub-element-body">
+                                
+                                    <div class="avatar">
+                                        <img src="https://WaffleCritter.github.io/assets/misc/TropicalCritter_pfp.jpg" alt="TropicalCritter" /><br />
+                                    </div>
+                                
+                                <span class="commenttext">
+                                  test test test
+                                </span>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                
+            
+        </div>
+
+
+        
+        <div id="footer-box" class="box" align=center>
+              <footer id="footer" style="left: 50%;
+          top: 50%;
+          -webkit-transform: translate(-50%, -50%);
+           transform: translate(-0%, 20%);">
+                  <div>
+                      <ul>
+                          <li>
+                            <a href="https://tropicalcritter.neocities.org/">CritterWorld:  Home</a>
+                          </li>
+                          
+                              <li>
+                                <a href="https://neocities.org/browse">Browse Neocities</a>
+                              </li>
+                      </ul>
+                  </div>
+                  <div>
+                    <p>&copy; 2024 – <span id="copyright-year">2025</span> TropicalCritter</p>
+                    <script>
+          
+                        document.getElementById("copyright-year").textContent = new Date().getFullYear();
+                    </script><br />
+                  </div>
+              </footer>
+          </div>
+      </div>
+
+
+
+	</body>
+</html>
